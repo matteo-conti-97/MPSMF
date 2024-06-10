@@ -1332,7 +1332,7 @@ label_percent(accuracy = 0.001)(r_A_c)
 # Put-Call parity at time t=0.
 # P_0 - C_0 + S_0 = K/(1+r_T) (discrete compound risk-free rate)
 # P_0 - C_0 + S_0 = K*e(-r_T) (continuous compound risk free rate)
-#
+# -> Le stime vengono un po male probabilmente per via di come investitori percepiscono il rischio e quindi fanno alzare il tasso privo di rischio, inoltre un po è dovuto che consideriamo le giornate, che però non sono omogenee. Probabilmente va un r_T aggiustato (possibile progetto)
 # SPX Market Price 4,108.94 -0.17 (-0.00%) At close: April 11 04:55PM EDT
 #
 S_0 <- 4108.94
