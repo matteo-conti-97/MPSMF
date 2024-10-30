@@ -14,7 +14,7 @@
 4-Plottiamo e nel grafico ci stanno in nero il valore dello stock ed in rosso il valore d'esercizio, in blu il valore prosecuzione ed in viola il valore di mercato dell'opzione (e.g se la esercito guadagno 1.402, se non la esercito MI ASPETTO un valore 3.7 e quindi non mi conviene esercitarla piuttosto me la vendo, e.g se la esercito guadagno 18, se non la esercito MI ASPETTO un valore 13 e quindi mi conviene esercitarla)
 
 ################ Ora consideriamo una call americana e verifichiamo che di fatto sono uguali alle europee
-1-Si fa il prezzo della cakk in un for con N passi su indice k costruendo una matrice di prezzi, ricordare che il prezzo della call americana al tempo n, cioè il valore di esercizio/esecuzione, è AC_n_payoff=(S_n-K)+
+1-Si fa il prezzo della call in un for con N passi su indice k costruendo una matrice di prezzi, ricordare che il prezzo della call americana al tempo n, cioè il valore di esercizio/esecuzione, è AC_n_payoff=(S_n-K)+
 2-Plottiamo e nel grafico ci stanno in nero il valore dello stock ed in rosso il valore d'esercizio
 3-Calcoliamo anche  il valore di mercato dell'opzione AC_n=max{AC_n_payoff, 1/1+rE*[AC_n+1|F_n]} cioè il massimo tra il valore di esercizio ed il valore di prosecuzione, questo si fa un passo alla volta tramite backward induction
 4-Plottiamo e nel grafico ci stanno in nero il valore dello stock ed in rosso il valore d'esercizio, in blu il valore prosecuzione ed in viola il valore di mercato dell'opzione, come si vede non cè mai un nodo che ha valore di esercizio più alto del valore di prosecuzione e quindi non conviene mai esercitarla e quindi di fatto la uso come europea
